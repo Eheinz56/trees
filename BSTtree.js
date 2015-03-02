@@ -44,10 +44,13 @@ function insert(data) {
    }
  }
 }
-
+//this code will find the max node in a tree
 function high(){
-        node = this.root;
-while(node != null){
+     var  node = this.root;
+while(node.right != null){
         node = node.right;
+
+	}
+	return node.data;
 }
 
