@@ -14,6 +14,7 @@ function BST() {
  this.inOrder = inOrder;
  this.preOrder = preOrder;
  this.postOrder = postOrder;
+ this.high = high;
  }
 
 function insert(data) {
@@ -42,5 +43,11 @@ function insert(data) {
      }
    }
  }
+}
+
+function high(){
+        node = this.root;
+while(node != null){
+        node = node.right;
 }
 
